@@ -16,7 +16,7 @@ function App() {
         <div className="App">
           <Navbar/>
           <Routes>
-            <Route path="/ebay/" element={<Home />} />
+            <Route path="/" element={<Home />} />
             <Route path="/userprofile" element={<UserProfile/>}/>
             <Route path="/product/:id" element={<ProductPreview/>}/>
             <Route path="/product/:id/chat" element={<Chat/>}/>
