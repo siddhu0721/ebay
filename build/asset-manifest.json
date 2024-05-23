@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/ebay/static/css/main.b4c011e1.css",
+    "main.js": "/ebay/static/js/main.3f16db4b.js",
+    "static/media/p2.jpg": "/ebay/static/media/p2.38e0870435f297d53ce7.jpg",
+    "static/media/cooler2.jpg": "/ebay/static/media/cooler2.692aab6bd10935eae0e6.jpg",
+    "static/media/cooler1.jpg": "/ebay/static/media/cooler1.6c9ab215433269cbe0d6.jpg",
+    "static/media/p1.jpg": "/ebay/static/media/p1.daacbb8ab07a6561d6f6.jpg",
+    "static/media/cooler3.jpg": "/ebay/static/media/cooler3.d033a9b448ad95a2cd9d.jpg",
+    "static/media/p3.jpg": "/ebay/static/media/p3.953db6e2018fb52a9ef1.jpg",
+    "static/media/pic.jpg": "/ebay/static/media/pic.2893563ceb95cc7efa6a.jpg",
+    "index.html": "/ebay/index.html",
+    "main.b4c011e1.css.map": "/ebay/static/css/main.b4c011e1.css.map",
+    "main.3f16db4b.js.map": "/ebay/static/js/main.3f16db4b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b4c011e1.css",
+    "static/js/main.3f16db4b.js"
+  ]
+}
