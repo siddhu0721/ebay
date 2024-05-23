@@ -1,0 +1,627 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: "Poetsen One", sans-serif;
+  height: 100vh;
+  width: 100%;
+  background-color: #375E97;
+}
+
+.App{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.mapFrame{
+  border-radius: 10px;
+}
+
+.homeLink{
+  font-family: "Lilita One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  padding: 5px;
+  font-size: 1.5rem;
+  width: 6rem;
+  background-color: #375E97;
+  border-radius: 5px;
+  color: white;
+  text-decoration: none;
+}
+
+.profileLink{
+  font-family: "Lilita One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  padding: 5px;
+  font-size: 1.5rem;
+  width: 8rem;
+  background-color: #375E97;
+  border-radius: 5px;
+  color: white;
+  text-decoration: none;
+}
+
+.home{
+  display: flex;
+}
+
+.ebayLink{
+  text-decoration: none;
+}
+
+.back{
+  font-family: "Lilita One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  padding: 5px;
+  font-size: 1.5rem;
+  width: 5rem;
+  background-color: #FB6542;
+  border-radius: 5px;
+  color: black;
+  text-decoration: none;
+  box-shadow: 4px 4px 4px black;
+}
+
+.back:active{
+  box-shadow: none;
+}
+
+.navbar{
+  color: black;
+  background-color: #FB6542;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid black;
+  padding: 1rem;
+  width: 100%;
+}
+
+.sitename{
+  display: flex;
+  font-size: 3.5rem;
+  font-family: "Jaro", sans-serif;
+  align-items: center;
+  gap: 1rem;
+}
+
+.ebay{
+  font-family: sans-serif;
+  display: grid;
+  padding: 2px;
+  font-size: 3.5rem;
+  background-color: black;
+  width:8.3rem;
+  height: 4.5rem;
+  border-radius: 5px;
+  grid-template-columns: repeat(4,1fr);
+}
+
+.ebay:hover{
+  box-shadow: 4px 4px 4px black;
+  background-color: white;
+}
+
+.e{
+  color: red;
+}
+.b{
+  color: blue;
+}
+.a{
+  color: yellow;
+}
+.y{
+  color: rgb(10, 169, 10);
+}
+
+.link{
+  display: flex;
+  gap: 1rem;
+  text-decoration: none;
+}
+
+.home{
+  width: 60vw;
+
+}
+
+.marketplace{
+  width: 30vw;
+  height: 50vh;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+.item{
+  background-color: #FFBB00;
+  border-radius: 10px;
+  font-family: "Poetsen One", sans-serif;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  padding: 1rem;
+  grid-template-columns: repeat(4,1fr);
+  grid-template-rows: repeat(3,1fr);
+  width: 30vw;
+
+  transition-property: all;
+  transition-duration: 1s;
+
+}
+
+img.thumbnail{
+  width: 100px;
+  border-radius: 5px;
+  border: 1px solid #375E97;
+}
+
+.thumbnail{
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 4;
+}
+
+.title{
+  font-size: 2rem;
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row: 1/2;
+}
+
+.description{
+  font-size: 1rem;
+  grid-column: 3/5;
+  grid-row: 2/3;
+}
+
+.price{
+  font-size: 1.3rem;
+  grid-column: 3/5;
+  grid-row: 3/4;
+}
+
+.details{
+  width: 30vw;
+  text-decoration: none;
+}
+
+.item:hover{
+  box-shadow: 5px 5px 5px white;
+  background-color: #FB6542;
+  color: black;
+}
+
+
+/* userprofile */
+
+.userprofile{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.upper{
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.profile{
+  display: flex;
+  flex-direction: column;
+  width: 15rem;
+}
+
+.profileEdit{
+  display: flex;
+  flex-direction: column;
+  width: 15rem;
+  height: 10rem;
+}
+
+.button{
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 10px;
+  font-family: "Lilita One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.edit{
+  align-self: flex-start;
+  font-family: "Lilita One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.profileText{
+  background-color: #FB6542;
+  border: 1px solid #FFBB00;
+  font-size: 3rem;
+  width: 37rem;
+  border-radius: 10px;
+}
+
+.profileText:hover{
+  box-shadow: 5px 5px 5px black;
+}
+
+.nameProfile{
+  margin-left: 10px;
+}
+
+.emailProfile{
+  margin-left: 10px;
+}
+
+.phoneProfile{
+  margin-left: 10px;
+}
+
+button{
+  margin-top: 10px;
+  align-self: center;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px;
+  font-size: 1.2rem;
+  width: 4rem;
+  color: black;
+  background-color:#FFBB00;
+  font-family: "Lilita One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+button:active{
+  box-shadow: none;
+}
+
+.photoProfile{
+  width: 300px;
+  border-radius: 10px;
+}
+
+.photoProfile:hover{
+  box-shadow: 5px 5px 5px black;
+  border: 1px solid black;
+}
+
+.summary{
+  font-size: 2rem;
+  color: white;
+  margin: 10px;
+}
+
+.sold{
+  font-size: 1.5rem;
+  margin-left: 10px;
+}
+
+.bought{
+  font-size: 1.5rem;
+  margin-left: 10px;
+}
+
+.sb{
+  background-color: #FB6542;
+  border: 1px solid #FFBB00;
+  width: 30rem;
+  margin-left: 5px;
+  border-radius: 10px;
+}
+
+.boughtItemsList{
+  font-size: 2rem;
+  color: white;
+  margin: 10px;
+  gap: 4px;
+}
+
+.buyList{
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+
+.buyItem{
+  background-color: #FB6542;
+  border: 1px solid #FFBB00;
+  display: flex;
+  gap: 2rem;
+  width: 28rem;
+  margin-left: 5px;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  padding: 10px;
+}
+
+
+/* productpreview */
+
+.productpreview{
+  display: flex;
+  flex-direction: column;
+}
+
+.productDetails{
+  display: flex;
+}
+
+.itemPics{
+  display: flex;
+  gap: 1rem;
+  margin: 10px;
+}
+
+.productPhoto{
+  border: 2px solid aliceblue;
+  border-radius: 5px;
+  width: 250px;
+}
+
+.itemTitle{
+  font-size: 3rem;
+  margin: 10px;
+  padding: 10px;
+  color: aliceblue;
+}
+
+.itemBrief{
+  margin: 10px;
+  padding: 10px;
+  font-size: 1.5rem;
+  border: 1px solid aliceblue;
+  border-radius: 10px;
+  background-color: #FFBB00;
+  color: #375E97;
+}
+
+.itemPrice{
+  margin: 10px;
+  padding: 10px;
+  font-size: 2rem;
+  color: aliceblue;
+}
+
+.buy{
+  margin: 20px;
+  padding: 7px;
+  font-size: 1.5rem;
+  background-color: #FFBB00;
+  border-radius: 5px;
+  box-shadow: 3px 3px 3px ;
+  color: black;
+  text-decoration: none;
+  font-family: "Lilita One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.buy:active{
+  box-shadow: none;
+}
+
+.lower{
+  display: flex;
+  justify-content: space-around;
+}
+
+.sellerText{
+  background-color: #FB6542;
+  color: black;
+  padding: 3px;
+  border-radius: 10px;
+  border: 1px solid #FFBB00;
+  margin-bottom: 5px;
+}
+
+.sellerInfo{
+  margin-left: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color: aliceblue;
+}
+
+.sellerinfo{
+  margin: 5px;
+}
+
+.sellerName{
+  margin: 5px;
+}
+
+.sellerEmail{
+  margin: 5px;
+}
+
+.mapLink{
+  margin: 20px;
+  padding: 7px;
+  font-size: 1.5rem;
+  background-color: #FFBB00;
+  border-radius: 5px;
+  box-shadow: 3px 3px 3px ;
+  color: black;
+  text-decoration: none;
+  font-family: "Lilita One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.mapLink:active{
+  box-shadow: none;
+}
+
+.reviewBlock{
+  margin: 20px;
+  color: aliceblue;
+}
+
+.costRev{
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.reviews{
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  background-color: #FB6542;
+  color: #375E97;
+  border-radius: 5px;
+}
+
+.review{
+  padding: 5px;
+  display: grid;
+  width: 270px;
+  height: 120px;
+  grid-template-rows: repeat(4,1fr);
+  grid-template-columns: repeat(9,1fr);
+}
+
+.review:hover{
+  border-radius: 5px;
+  border: 1px solid aliceblue;
+  background-color: #FFBB00;
+  color: black;
+}
+
+.firstL{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 6rem;
+  color: black;
+  grid-row: 1/5;
+  grid-column: 1/5;
+  align-self: center;
+  justify-self: center;
+  background-color: aquamarine;
+  height: 100px;
+  width: 100px;
+}
+
+.usernameReview{
+  align-self: center;
+  justify-self: center;
+  grid-row: 1/2;
+  grid-column: 5/10;
+  font-size: 1.5rem;
+}
+
+.ratingReview{
+  align-self: center;
+  font-size: 1.1rem;
+  grid-column: 5/10;
+  grid-row: 2/3;
+}
+.commentReview{
+  align-self: center;
+  justify-self: center;
+  grid-column: 5/10;
+  grid-row: 3/5;
+}
+
+.editBlock{
+  display: flex;
+  flex-direction: column;
+  width: 270px;
+}
+
+.add{
+  font-size: 1.5rem;
+  font-family: "Lilita One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.submit{
+  width: 5rem;
+  font-family: "Lilita One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+/* chat */
+
+.Chats{
+  width: 100vw;
+}
+
+.chats{
+  display: flex;
+}
+
+.messages{
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  border-radius: 5px;
+  width: 20rem;
+  height: 30rem;
+  margin: 20px;
+  font-size: 1.5rem;
+  background-color: #FFBB00;
+  list-style-type: none;
+}
+
+.message{
+  background-color: #375E97;
+  margin: 5px;
+  padding: 4px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  color: white;
+}
+
+.typing{
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+
+.cws{
+  font-size: 3rem;
+  margin-left: 20px;
+  color: white;
+}
+.messageArea{
+  width: 20rem;
+  height: 3rem;
+  font-size: 1rem;
+}
